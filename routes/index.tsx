@@ -1,6 +1,6 @@
 import { useSignal } from "@preact/signals";
 import { define } from "../utils.ts";
-import Counter from "../islands/Counter.tsx";
+import Counter from "../islands/CCounter.tsx";
 import { CButton} from "@coreui/react";
 
 export default define.page(function Home() {
@@ -22,7 +22,7 @@ export default define.page(function Home() {
           <code class="mx-2">./routes/index.tsx</code> file, and refresh.
         </p>
         <Counter count={count} />
-        <CButton>CoreUI</CButton>
+        <CButton>CoreUI Button SSR</CButton>
       </div>
     </div>
   );
